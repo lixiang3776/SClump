@@ -1,8 +1,5 @@
 function [x ft] = EProjSimplex_new(v, k)
 
-%
-%% Problem
-%
 %  min  1/2 || x - v||^2
 %  s.t. x>=0, 1'x=k
 %
