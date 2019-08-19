@@ -1,5 +1,5 @@
 # SClump
-This is an implementation of SCHAIN in the WWW'17 paper:
+This is an implementation of SClump in the AAAI'19 paper:
 
 "Spectral Clustering in Heterogeneous Information Networks" 
 
