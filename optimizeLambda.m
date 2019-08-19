@@ -41,13 +41,6 @@ ub = ones(1,P);
 nonlcon = [];
 options = optimoptions('fmincon','MaxFunctionEvaluations',4000,'ObjectiveLimit',-1e40);
 
-val_ref = zeros(1,P);
-for i = 1 : P
-    xi = zeros(1,P);
-    xi(i) = 1;
-    val_ref(i) = fun(xi);
-end
-
 while 1
     x0 = rand(1,P);
     
@@ -69,10 +62,7 @@ while 1
         disp(exitflag);
     end;
 end;
-% disp(fun([1,0,0]));
-% disp(fun([0,1,0]));
-% disp(fun([0,0,1]));
-% disp(fun([0,0,0,1]));
+
 end
 
 function f = fun(y)
